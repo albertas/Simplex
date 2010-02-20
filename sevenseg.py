@@ -19,6 +19,7 @@ big_numbers = \
   ###           ###    ###           ###    ###           ###    ###  """
 
 def sevenSeg():
+    """ Išspausdink pateiktą dešimtainį skaičių dideliais skaitmenim """
     if len(sys.argv) < 2:
         number = int(raw_input("Įveskite teigiamą sveikąjį skaičių: "))
     else:
