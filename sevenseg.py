@@ -8,7 +8,8 @@ ilgesnis kaip 10 skaitmenų.
 import sys
 
 big_numbers = \
-"""  ###           ###    ###           ###    ###    ###    ###    ###  
+"""\
+  ###           ###    ###           ###    ###    ###    ###    ###  
  #   #      #      #      #  #   #  #      #          #  #   #  #   # 
  #   #      #      #      #  #   #  #      #          #  #   #  #   # 
  #   #      #      #      #  #   #  #      #          #  #   #  #   # 
@@ -18,9 +19,11 @@ big_numbers = \
  #   #      #  #          #      #      #  #   #      #  #   #      # 
   ###           ###    ###           ###    ###           ###    ###  """
 
-def sevenSeg():
-    """ Išspausdink pateiktą dešimtainį skaičių dideliais skaitmenim """
-    if len(sys.argv) < 2:
+def sevenSeg(args):
+    """Išspausdink pateiktą dešimtainį skaičių dideliais skaitmenim."""
+    if args: 
+        number = args
+    elif len(sys.argv) < 2:    
         number = int(raw_input("Įveskite teigiamą sveikąjį skaičių: "))
     else:
         number = int(sys.argv[1])
@@ -33,11 +36,26 @@ def sevenSeg():
             line = big_numbers[range_from:range_to] + line
             tmp /= 10
         print line
+        
+def test_sevenSeg():
+    """
+    >>> sevenSeg(12)
+             ###  
+         #      # 
+         #      # 
+         #      # 
+             ###  
+         #  #     
+         #  #     
+         #  #     
+             ###  
+        
+    """
 
 if __name__ == "__main__":
     import doctest
     doctest.testmod()
-    sevenSeg()
+    sevenSeg([])
         
     
         

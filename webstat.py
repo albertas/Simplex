@@ -30,18 +30,18 @@ def getWebStat():
         url = sys.argv[1]
     time_before = time.time()
     f = urllib.urlopen(url)
-    time_after = time.time()
     page_content = f.read()
+    time_after = time.time()  
     f.close()
-    load_speed = len(page_content) * 8 / (time_after - time_before)
-    print "Puslapio parsiuntimo greitis:", load_speed, "bps"
+    load_speed = len(page_content) / ((time_after - time_before)*1024)
+    print "Puslapio parsiuntimo greitis:", load_speed, "KB/s"
     print "Puslapio SHA1 kontrolinė suma:"
     print hashlib.sha1(page_content).hexdigest()
     print "Puslapio baitų skaičius:", len(page_content)
     myparser = MyHTMLParser()
     myparser.feed(page_content)
     print "Puslapyje yra", myparser.newlines, "naujų eilučių"
-    
+       
 if __name__ == '__main__':
     import doctest
     doctest.testmod()

@@ -3,22 +3,22 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>sevenseg.py</string>
+	<string>webstat.py</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
 			<string>sevenseg.py</string>
 			<key>lastUsed</key>
-			<date>2010-02-20T23:34:01Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2010-03-01T17:16:20Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>webstat.py</string>
 			<key>lastUsed</key>
-			<date>2010-02-20T23:34:01Z</date>
+			<date>2010-03-01T17:16:20Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
@@ -30,44 +30,28 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>53</integer>
+				<integer>15</integer>
 				<key>line</key>
-				<integer>21</integer>
+				<integer>9</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>34</integer>
 		</dict>
 		<key>webstat.py</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>0</integer>
+				<integer>27</integer>
 				<key>line</key>
-				<integer>26</integer>
+				<integer>33</integer>
 			</dict>
-			<key>columnSelection</key>
-			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>19</integer>
-			<key>selectFrom</key>
-			<dict>
-				<key>column</key>
-				<integer>25</integer>
-				<key>line</key>
-				<integer>29</integer>
-			</dict>
-			<key>selectTo</key>
-			<dict>
-				<key>column</key>
-				<integer>0</integer>
-				<key>line</key>
-				<integer>26</integer>
-			</dict>
+			<integer>11</integer>
 		</dict>
 	</dict>
 	<key>openDocuments</key>
@@ -78,6 +62,6 @@
 	<key>showFileHierarchyDrawer</key>
 	<false/>
 	<key>windowFrame</key>
-	<string>{{521, 194}, {759, 574}}</string>
+	<string>{{2, 204}, {759, 574}}</string>
 </dict>
 </plist>
